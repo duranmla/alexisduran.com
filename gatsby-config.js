@@ -6,7 +6,15 @@
 
 module.exports = {
     plugins: [
-        `gatsby-plugin-emotion`,
+        {
+            resolve: `gatsby-plugin-sass`,
+            options: {
+                postCssPlugins: [
+                    require('tailwindcss'),
+                    require('./tailwind.config.js')
+                ]
+            }
+        },
         {
             resolve: `gatsby-plugin-google-fonts-v2`,
             options: {
