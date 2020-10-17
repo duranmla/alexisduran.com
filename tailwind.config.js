@@ -14,7 +14,11 @@ module.exports = {
             normal: 300,
             bold: 900
         },
-        extend: {}
+        extend: {
+            gridTemplateRows: {
+                layout: 'auto 1fr auto'
+            }
+        }
     },
     variants: {},
     plugins: []

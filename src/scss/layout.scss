@@ -1,0 +1,16 @@
+/**
+ * As Gatsby adds extra divs in regards
+ * the routing manipulation we need to affect
+ * them to allow the layout render properly
+ */
+html,
+body,
+#___gatsby,
+#___gatsby > div {
+  height: 100%;
+}
+
+.layout {
+  @apply bg-red-700 h-full;
+  @apply grid grid-rows-layout;
+}
