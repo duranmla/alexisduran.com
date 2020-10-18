@@ -1,42 +1,29 @@
 import React from 'react'
 
+const NavLink = ({ children, preffix, ...linkAttrs }) => {
+    return (
+        <a className="p-4 pb-8 text-2xl font-bold uppercase" {...linkAttrs}>
+            <p className="top-0 left-0 block m-0 text-xs italic font-normal">
+                {preffix}
+            </p>
+            <p className="relative block leading-none">{children}</p>
+        </a>
+    )
+}
+
 const Footer = () => {
     return (
         <footer className="px-4">
             <nav className="flex divide-x">
-                <a
-                    className="px-4 py-8 text-4xl font-bold uppercase"
-                    href="/work"
-                >
-                    <span className="relative block leading-loose">
-                        work
-                        <span className="absolute top-0 left-0 block text-xs italic font-normal">
-                            01
-                        </span>
-                    </span>
-                </a>
-                <a
-                    className="px-4 py-8 text-4xl font-bold uppercase"
-                    href="/stories"
-                >
-                    <span className="relative block leading-loose">
-                        stories
-                        <span className="absolute top-0 left-0 block text-xs italic font-normal">
-                            02
-                        </span>
-                    </span>
-                </a>
-                <a
-                    className="px-4 py-8 text-4xl font-bold uppercase"
-                    href="/about"
-                >
-                    <span className="relative block leading-loose">
-                        about
-                        <span className="absolute top-0 left-0 block text-xs italic font-normal">
-                            03
-                        </span>
-                    </span>
-                </a>
+                <NavLink href="/work" preffix="01">
+                    work
+                </NavLink>
+                <NavLink href="/stories" preffix="02">
+                    stories
+                </NavLink>
+                <NavLink href="/about" preffix="03">
+                    about
+                </NavLink>
             </nav>
         </footer>
     )
