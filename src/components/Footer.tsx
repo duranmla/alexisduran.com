@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="px-4">
             <nav className="flex">
                 <a
-                    className="px-4 py-8 text-4xl font-bold uppercase border-r-2 last:border-r-0"
+                    className="px-4 py-8 text-4xl font-bold uppercase border-r last:border-r-0"
                     href="/work"
                 >
                     <span className="relative block leading-loose">
@@ -16,7 +16,7 @@ const Footer = () => {
                     </span>
                 </a>
                 <a
-                    className="px-4 py-8 text-4xl font-bold uppercase border-r-2 last:border-r-0"
+                    className="px-4 py-8 text-4xl font-bold uppercase border-r last:border-r-0"
                     href="/stories"
                 >
                     <span className="relative block leading-loose">
@@ -27,7 +27,7 @@ const Footer = () => {
                     </span>
                 </a>
                 <a
-                    className="px-4 py-8 text-4xl font-bold uppercase border-r-2 last:border-r-0"
+                    className="px-4 py-8 text-4xl font-bold uppercase border-r last:border-r-0"
                     href="/about"
                 >
                     <span className="relative block leading-loose">
