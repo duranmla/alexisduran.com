@@ -1,15 +1,11 @@
 import React from 'react'
-
-const Layout = ({ children }) => <div className="layout">{children}</div>
+import { Layout, Hero } from '../components'
 
 const IndexPage = () => (
     <Layout>
-        <header>Header</header>
-        <section>
-            <h1 className="font-body">Hi people</h1>
-            <button className="btn-primary">Activate</button>
+        <section className="flex items-center">
+            <Hero />
         </section>
-        <footer>Copyright</footer>
     </Layout>
 )
 export default IndexPage
