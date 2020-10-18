@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "gatsby": "^2.24.80",
-    "gatsby-plugin-google-fonts-v2": "^0.0.6",
     "gatsby-plugin-sass": "^2.3.17",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",

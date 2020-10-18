@@ -8,9 +8,12 @@ module.exports = {
     purge: [],
     theme: {
         fontFamily: {
-            body: 'Lato, sans-serif'
+            headline: 'Gilroy, sans-serif',
+            body: 'Gilroy, sans-serif',
+            cursive: 'Libre Baskerville, serif'
         },
         fontWeight: {
+            semibold: 500,
             normal: 300,
             bold: 900
         },

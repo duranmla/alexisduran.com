@@ -11,6 +11,5 @@ body,
 }
 
 .layout {
-  @apply bg-red-700 h-full text-white font-normal;
-  @apply grid grid-rows-layout;
+  @apply grid grid-rows-layout h-full;
 }

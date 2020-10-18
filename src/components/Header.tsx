@@ -9,7 +9,7 @@ const Header = () => {
                     href="#"
                 >
                     RESUME
-                    <span className="absolute top-0 left-0 block text-xs italic font-normal">
+                    <span className="absolute top-0 left-0 block text-xs italic font-normal font-cursive">
                         Get my
                     </span>
                 </a>
@@ -18,7 +18,7 @@ const Header = () => {
                     href="mailto:hi@alexisduran.com"
                 >
                     CONTACT
-                    <span className="absolute top-0 left-0 block text-xs italic font-normal">
+                    <span className="absolute top-0 left-0 block text-xs italic font-normal font-cursive">
                         Let&apos;s work
                     </span>
                 </a>

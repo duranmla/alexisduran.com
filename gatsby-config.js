@@ -14,17 +14,6 @@ module.exports = {
                     require('./tailwind.config.js')
                 ]
             }
-        },
-        {
-            resolve: `gatsby-plugin-google-fonts-v2`,
-            options: {
-                fonts: [
-                    {
-                        family: 'Lato',
-                        weights: ['300', '900']
-                    }
-                ]
-            }
         }
     ]
 }
