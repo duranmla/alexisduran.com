@@ -2,7 +2,10 @@ import React from 'react'
 
 const NavLink = ({ children, preffix, ...linkAttrs }) => {
     return (
-        <a className="p-4 pb-8 text-2xl font-bold uppercase" {...linkAttrs}>
+        <a
+            className="p-4 text-2xl font-bold uppercase transition-opacity duration-200 ease-in-out opacity-50 hover:opacity-100"
+            {...linkAttrs}
+        >
             <p className="top-0 left-0 block m-0 text-xs italic font-normal">
                 {preffix}
             </p>
@@ -13,7 +16,7 @@ const NavLink = ({ children, preffix, ...linkAttrs }) => {
 
 const Footer = () => {
     return (
-        <footer className="px-4">
+        <footer className="p-4">
             <nav className="flex divide-x">
                 <NavLink href="/work" preffix="01">
                     work
