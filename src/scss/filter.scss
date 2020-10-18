@@ -1,0 +1,10 @@
+.filtered {
+  @apply bg-red-700;
+}
+
+.filtered img {
+  mix-blend-mode: screen;
+  -webkit-filter: grayscale(100%) contrast(200%);
+  filter: grayscale(100%) contrast(200%);
+  opacity: 1;
+}
