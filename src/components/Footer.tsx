@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer className="px-4">
-            <nav className="flex">
+            <nav className="flex divide-x">
                 <a
-                    className="px-4 py-8 text-4xl font-bold uppercase border-r last:border-r-0"
+                    className="px-4 py-8 text-4xl font-bold uppercase"
                     href="/work"
                 >
                     <span className="relative block leading-loose">
@@ -16,7 +16,7 @@ const Footer = () => {
                     </span>
                 </a>
                 <a
-                    className="px-4 py-8 text-4xl font-bold uppercase border-r last:border-r-0"
+                    className="px-4 py-8 text-4xl font-bold uppercase"
                     href="/stories"
                 >
                     <span className="relative block leading-loose">
@@ -27,7 +27,7 @@ const Footer = () => {
                     </span>
                 </a>
                 <a
-                    className="px-4 py-8 text-4xl font-bold uppercase border-r last:border-r-0"
+                    className="px-4 py-8 text-4xl font-bold uppercase"
                     href="/about"
                 >
                     <span className="relative block leading-loose">
