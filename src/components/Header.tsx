@@ -3,7 +3,7 @@ import React from 'react'
 const NavLink = ({ children, preffix, ...linkAttrs }) => {
     return (
         <a
-            className="px-4 text-2xl font-bold uppercase transition-opacity duration-200 ease-in-out opacity-50 hover:opacity-100"
+            className="text-2xl font-bold uppercase transition-opacity duration-200 ease-in-out opacity-50 hover:opacity-100"
             {...linkAttrs}
         >
             <p className="top-0 left-0 block m-0 text-xs italic font-normal">
@@ -17,7 +17,7 @@ const NavLink = ({ children, preffix, ...linkAttrs }) => {
 const Header = () => {
     return (
         <header className="p-4">
-            <nav className="flex justify-end p-4">
+            <nav className="flex justify-end p-4 space-x-4">
                 <NavLink href="#" preffix="Get my">
                     resume
                 </NavLink>
