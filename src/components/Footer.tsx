@@ -17,7 +17,7 @@ const NavLink = ({ children, preffix, ...linkAttrs }) => {
 const Footer = () => {
     return (
         <footer className="p-4">
-            <nav className="flex invisible divide-x sm:visible">
+            <nav className="hidden divide-x sm:flex">
                 <NavLink href="/work" preffix="01">
                     work
                 </NavLink>

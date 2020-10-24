@@ -17,7 +17,7 @@ const NavLink = ({ children, preffix, ...linkAttrs }) => {
 const Header = () => {
     return (
         <header className="p-4">
-            <nav className="flex justify-end invisible p-4 space-x-4 sm:visible">
+            <nav className="justify-end hidden p-4 space-x-4 sm:flex">
                 <NavLink href="#" preffix="Get my">
                     resume
                 </NavLink>
