@@ -5,7 +5,7 @@ const Hero = ({ imgData }) => {
     return (
         <>
             <div className="container px-8">
-                <h1 className="text-6xl font-bold leading-none">
+                <h1 className="mb-2 text-6xl font-bold leading-none">
                     <span className="block mr-2 text-4xl font-normal sm:inline-block">
                         I&apos;m
                     </span>
