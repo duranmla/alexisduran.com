@@ -6,7 +6,7 @@ const IndexPage = ({ data }) => (
     <Layout>
         <section className="flex items-center">
             <Hero imgData={data} />
-            <div className="absolute bottom-0 right-0 p-8">
+            <div className="absolute bottom-0 right-0 invisible p-8 sm:visible">
                 <SocialMedia />
             </div>
         </section>

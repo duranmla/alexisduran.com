@@ -5,8 +5,10 @@ const Hero = ({ imgData }) => {
     return (
         <>
             <div className="container px-8">
-                <h1 className="text-6xl font-bold">
-                    <span className="mr-2 text-4xl font-normal">I&apos;m</span>
+                <h1 className="text-6xl font-bold leading-none">
+                    <span className="block mr-2 text-4xl font-normal sm:inline-block">
+                        I&apos;m
+                    </span>
                     Alexis Duran
                 </h1>
                 <p className="text-4xl leading-tight">
