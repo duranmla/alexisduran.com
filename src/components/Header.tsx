@@ -1,4 +1,5 @@
 import React from 'react'
+import MenuIcon from './MenuIcon'
 
 const NavLink = ({ children, preffix, ...linkAttrs }) => {
     return (
@@ -16,7 +17,10 @@ const NavLink = ({ children, preffix, ...linkAttrs }) => {
 
 const Header = () => {
     return (
-        <header className="p-4">
+        <header className="px-4 pt-4 sm:p-4">
+            <div className="block sm:hidden">
+                <MenuIcon />
+            </div>
             <nav className="justify-end hidden p-4 space-x-4 sm:flex">
                 <NavLink href="#" preffix="Get my">
                     resume

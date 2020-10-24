@@ -1,0 +1,15 @@
+.stripe-menu-icon {
+  .stripe {
+    @apply w-4 bg-black;
+    height: 2px;
+  }
+
+  .stripe:nth-child(1) {
+  }
+  .stripe:nth-child(2) {
+    @apply w-5;
+    margin: 2px 0;
+  }
+  .stripe:nth-child(3) {
+  }
+}
