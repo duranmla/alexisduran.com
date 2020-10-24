@@ -6,10 +6,10 @@ const IndexPage = ({ data }) => (
     <Layout>
         <section className="flex items-center">
             <Hero imgData={data} />
-            <div className="absolute bottom-0 right-0 hidden p-8 sm:block">
-                <SocialMedia />
-            </div>
         </section>
+        <div className="absolute bottom-0 right-0 hidden p-8 sm:block">
+            <SocialMedia />
+        </div>
     </Layout>
 )
 
