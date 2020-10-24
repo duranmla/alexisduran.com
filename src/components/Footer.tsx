@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NavLink = ({ children, preffix, ...linkAttrs }) => {
+const NavLink = ({ children, preffix, className = '', ...linkAttrs }) => {
     return (
         <a
-            className="p-4 text-2xl font-bold uppercase transition-opacity duration-200 ease-in-out opacity-50 hover:opacity-100"
+            className={`p-4 text-2xl font-bold uppercase transparent-effect ${className}`}
             {...linkAttrs}
         >
             <p className="top-0 left-0 block m-0 text-xs italic font-normal">
@@ -16,7 +16,25 @@ const NavLink = ({ children, preffix, ...linkAttrs }) => {
 
 const Footer = () => {
     return (
-        <footer className="p-4">
+        <footer className="mt-8 bg-white sm:p-4 sm:bg-transparent">
+            <div className="flex justify-around divide-x sm:hidden">
+                <NavLink
+                    href="#"
+                    preffix="Get my"
+                    className="w-1/2 text-center text-black"
+                    style={{ opacity: 1 }}
+                >
+                    resume
+                </NavLink>
+                <NavLink
+                    href="mailto:hi@alexisduran.com"
+                    preffix="Let's work"
+                    className="w-1/2 text-center text-black"
+                    style={{ opacity: 1 }}
+                >
+                    mail me
+                </NavLink>
+            </div>
             <nav className="hidden divide-x sm:flex">
                 <NavLink href="/work" preffix="01">
                     work
