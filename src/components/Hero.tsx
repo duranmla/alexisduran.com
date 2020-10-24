@@ -15,6 +15,11 @@ const Hero = ({ imgData }) => {
                     Duis mollis, tellus ac elementum mollis, nibh sem pulvinar
                     mauris, quis faucibus risus urna nec dui.
                 </p>
+                <div className="block my-8 sm:hidden">
+                    <button className="p-4 bg-transparent border border-white">
+                        More about me
+                    </button>
+                </div>
             </div>
             <div className="filtered">
                 {imgData.file && (
