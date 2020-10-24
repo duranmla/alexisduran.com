@@ -1,11 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Layout, Hero } from '../components'
+import { Layout, Hero, SocialMedia } from '../components'
 
 const IndexPage = ({ data }) => (
     <Layout>
         <section className="flex items-center">
             <Hero imgData={data} />
+            <div className="absolute bottom-0 right-0 p-8">
+                <SocialMedia />
+            </div>
         </section>
     </Layout>
 )

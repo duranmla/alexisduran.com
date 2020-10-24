@@ -1,0 +1,7 @@
+.transparent-effect {
+  @apply transition-opacity duration-200 ease-in-out opacity-50;
+}
+
+.transparent-effect:hover {
+  @apply opacity-100;
+}
