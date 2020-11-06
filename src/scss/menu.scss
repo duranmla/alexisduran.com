@@ -1,14 +1,13 @@
 .stripe-menu-icon {
   .stripe {
-    @apply w-4 bg-black;
+    @apply w-4 bg-black ml-auto;
     height: 2px;
   }
 
   .stripe:nth-child(1) {
   }
   .stripe:nth-child(2) {
-    @apply w-5;
-    margin: 2px 0;
+    @apply w-5 my-1;
   }
   .stripe:nth-child(3) {
   }
