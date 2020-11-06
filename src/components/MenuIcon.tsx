@@ -1,30 +1,28 @@
-import React, { useState } from 'react'
-import classNames from 'classnames'
+import React from 'react'
+import Menu from './Menu'
 
 const MenuIcon = () => {
-    const [open, setOpen] = useState(false)
-    const ariaLabel = open ? 'open menu' : 'close menu'
-    const classes = classNames(
-        'flex flex-col content-center justify-center w-10 h-10 m-4 ml-auto bg-white rounded-full shadow',
-        { open }
-    )
     const handleOnClick = () => {
-        setOpen((state) => !state)
+        document.body.classList.add('menu-open')
+        document.getElementsByTagName('html')[0].style.overflow = 'hidden'
     }
 
     return (
-        <button
-            onClick={handleOnClick}
-            className={classes}
-            aria-label={ariaLabel}
-        >
-            <div className="mx-auto stripe-menu-icon">
-                <div className="stripe" />
-                <div className="stripe" />
-                <div className="stripe" />
-                <div className="stripe-close" />
-            </div>
-        </button>
+        <>
+            <button
+                id="menu-toggle"
+                onClick={handleOnClick}
+                className="flex flex-col content-center justify-center w-10 h-10 m-4 ml-auto bg-white rounded-full shadow"
+                aria-label="open menu"
+            >
+                <div className="mx-auto stripe-menu-icon">
+                    <div className="stripe" />
+                    <div className="stripe" />
+                    <div className="stripe" />
+                </div>
+            </button>
+            <Menu />
+        </>
     )
 }
 

@@ -16,7 +16,10 @@ const NavLink = ({ children, preffix, className = '', ...linkAttrs }) => {
 
 const Footer = () => {
     return (
-        <footer className="mt-8 bg-white sm:p-4 sm:bg-transparent">
+        <footer
+            id="site-footer"
+            className="mt-8 bg-white sm:p-4 sm:bg-transparent"
+        >
             <div className="flex justify-around divide-x shadow sm:hidden">
                 <NavLink
                     href="#"
