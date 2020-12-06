@@ -6,6 +6,7 @@ import { Link } from 'gatsby'
 
 const AboutPage = () => (
     <Layout>
+        <div className="watermark" />
         <section className="flex flex-col items-center">
             <div className="container px-8">
                 <nav className="flex mb-8 sm:hidden">
