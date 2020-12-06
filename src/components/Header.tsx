@@ -22,7 +22,11 @@ const Header = () => {
                 <MenuIcon />
             </div>
             <nav className="justify-end hidden p-4 space-x-4 sm:flex">
-                <NavLink href="#" preffix="Get my">
+                <NavLink
+                    href="https://bit.ly/3mPH9XA"
+                    target="blank"
+                    preffix="Get my"
+                >
                     resume
                 </NavLink>
                 <NavLink href="mailto:hi@alexisduran.com" preffix="Let's work">

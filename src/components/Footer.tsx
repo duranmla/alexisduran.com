@@ -31,9 +31,10 @@ const Footer = () => {
             <div className="flex justify-around divide-x shadow sm:hidden">
                 <NavLink
                     tag="a"
-                    href="#"
+                    href="https://bit.ly/3mPH9XA"
                     preffix="Get my"
                     className="w-1/2 text-center text-black"
+                    target="blank"
                     style={{ opacity: 1 }}
                 >
                     resume
