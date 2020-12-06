@@ -15,10 +15,10 @@ const AboutPage = () => (
                     </Link>
                 </nav>
                 <small className="text-xl leading-none">Hola! I&apos;m</small>
-                <h1 className="text-4xl font-bold leading-normal">
+                <h1 className="text-4xl font-bold leading-tight">
                     Alexis Duran
                 </h1>
-                <h2 className="mb-8 text-2xl">UI/UX Software Engineer</h2>
+                <h2 className="mt-2 mb-8 text-2xl">UI/UX Software Engineer</h2>
                 <p>
                     Ponam in culpa idiota aliis pravitatis. Principium ponere
                     culpam in se justum praeceptum. Neque improperes et aliis
