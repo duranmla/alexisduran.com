@@ -1,8 +1,16 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
-const NavLink = ({ children, preffix, className = '', ...linkAttrs }) => {
+const NavLink = ({
+    children,
+    preffix,
+    className = '',
+    tag = null,
+    ...linkAttrs
+}) => {
+    const Component = tag || Link
     return (
-        <a
+        <Component
             className={`p-4 text-2xl font-bold uppercase transparent-effect ${className}`}
             {...linkAttrs}
         >
@@ -10,7 +18,7 @@ const NavLink = ({ children, preffix, className = '', ...linkAttrs }) => {
                 {preffix}
             </p>
             <p className="relative block leading-none">{children}</p>
-        </a>
+        </Component>
     )
 }
 
@@ -22,6 +30,7 @@ const Footer = () => {
         >
             <div className="flex justify-around divide-x shadow sm:hidden">
                 <NavLink
+                    tag="a"
                     href="#"
                     preffix="Get my"
                     className="w-1/2 text-center text-black"
@@ -30,6 +39,7 @@ const Footer = () => {
                     resume
                 </NavLink>
                 <NavLink
+                    tag="a"
                     href="mailto:hi@alexisduran.com"
                     preffix="Let's work"
                     className="w-1/2 text-center text-black"
@@ -39,13 +49,13 @@ const Footer = () => {
                 </NavLink>
             </div>
             <nav className="hidden divide-x sm:flex">
-                <NavLink href="/work" preffix="01">
+                <NavLink to="/work" preffix="01">
                     work
                 </NavLink>
-                <NavLink href="/stories" preffix="02">
+                <NavLink to="/stories" preffix="02">
                     stories
                 </NavLink>
-                <NavLink href="/about" preffix="03">
+                <NavLink to="/about" preffix="03">
                     about
                 </NavLink>
             </nav>
