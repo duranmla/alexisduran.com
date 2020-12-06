@@ -1,12 +1,13 @@
 import React from 'react'
 import Img from 'gatsby-image'
+import { Link } from 'gatsby'
 
 const Hero = ({ imgData }) => {
     return (
         <>
             <div className="container px-8">
-                <h1 className="mb-2 text-6xl font-bold leading-none">
-                    <span className="block mr-2 text-4xl font-normal sm:inline-block">
+                <h1 className="mb-4 text-6xl font-bold leading-none">
+                    <span className="block mb-2 mr-4 text-4xl font-normal sm:inline-block">
                         I&apos;m
                     </span>
                     Alexis Duran
@@ -15,10 +16,13 @@ const Hero = ({ imgData }) => {
                     Duis mollis, tellus ac elementum mollis, nibh sem pulvinar
                     mauris, quis faucibus risus urna nec dui.
                 </p>
-                <div className="block my-8 sm:hidden">
-                    <button className="p-4 bg-transparent border border-white">
+                <div className="block my-12 sm:hidden">
+                    <Link
+                        to="/about"
+                        className="p-4 bg-transparent border border-white"
+                    >
                         More about me
-                    </button>
+                    </Link>
                 </div>
             </div>
             <div className="filtered">
