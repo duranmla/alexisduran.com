@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const Menu = () => {
     const handleOnClick = () => {
@@ -16,19 +17,35 @@ const Menu = () => {
                 <div className="stripe" />
                 <div className="stripe" />
             </button>
-            <nav className="flex flex-col items-center justify-center">
-                <a className="text-2xl font-bold" href="/">
+            <nav className="flex flex-col items-center justify-center space-y-8">
+                <Link
+                    className="text-2xl font-bold transparent-effect"
+                    onClick={handleOnClick}
+                    to="/"
+                >
                     Home
-                </a>
-                <a className="text-2xl font-bold" href="/">
+                </Link>
+                <Link
+                    className="text-2xl font-bold text-center transparent-effect"
+                    onClick={handleOnClick}
+                    to="/work"
+                >
                     Work
-                </a>
-                <a className="text-2xl font-bold" href="/">
+                </Link>
+                <Link
+                    className="text-2xl font-bold transparent-effect"
+                    onClick={handleOnClick}
+                    to="/stories"
+                >
                     Stories
-                </a>
-                <a className="text-2xl font-bold" href="/">
+                </Link>
+                <Link
+                    className="text-2xl font-bold transparent-effect"
+                    onClick={handleOnClick}
+                    to="/about"
+                >
                     About
-                </a>
+                </Link>
             </nav>
         </div>
     )
