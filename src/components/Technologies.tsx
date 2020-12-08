@@ -13,8 +13,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Technologies = ({ className = '' }) => {
     return (
         <div className={className}>
-            <ul className="flex flex-row mt-6 space-x-6">
-                <li className="flex flex-col items-center space-y-2">
+            <ul className="flex flex-row flex-wrap content-start justify-between -ml-6 space-x-6 space-y-4">
+                <li className="flex flex-col items-center mt-4 ml-6 space-y-2">
                     <FontAwesomeIcon className="text-3xl" icon={faReact} />
                     <small>React</small>
                 </li>
