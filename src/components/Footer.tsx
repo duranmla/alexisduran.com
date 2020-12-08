@@ -50,13 +50,16 @@ const Footer = () => {
                 </NavLink>
             </div>
             <nav className="hidden divide-x sm:flex">
-                <NavLink to="/work" preffix="01">
+                <NavLink to="/" preffix="01">
+                    home
+                </NavLink>
+                <NavLink to="/work" preffix="02">
                     work
                 </NavLink>
-                <NavLink to="/stories" preffix="02">
+                <NavLink to="/stories" preffix="03">
                     stories
                 </NavLink>
-                <NavLink to="/about" preffix="03">
+                <NavLink to="/about" preffix="04">
                     about
                 </NavLink>
             </nav>
