@@ -5,3 +5,8 @@
 .transparent-effect:hover {
   @apply opacity-100;
 }
+
+// Classes abstraction affect the ability to responsive change properties, here some exceptions
+.mobile-nav .social-media .transparent-effect {
+  @apply opacity-100;
+}
