@@ -11,6 +11,11 @@
   transition: transform 0.216s ease 0.05s, border-radius 0.216s ease 0.216s;
 }
 
+nav > a.active {
+  @apply underline opacity-100;
+  text-decoration-color: #c53030;
+}
+
 /**
  * Side effects from open menu
  */

@@ -13,7 +13,7 @@ const SocialMedia = ({ orientation = 'col', className = '' }) => {
         orientation === 'col' ? 'flex-col space-y-3' : 'flex-row space-x-6'
 
     return (
-        <div className="inline-block">
+        <div className="inline-block social-media">
             <div className={`text-2xl flex ${classes} ${className}`}>
                 <a className="transparent-effect" href="#" target="_blank">
                     <span className="hidden">Twitter</span>

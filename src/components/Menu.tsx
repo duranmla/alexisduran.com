@@ -1,6 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link as GatsbyLink } from 'gatsby'
 import SocialMedia from './SocialMedia'
+
+const Link = ({ to, className, ...props }) => {
+    const classes = location.pathname === to ? 'active' : ''
+    return (
+        <GatsbyLink className={`${classes} ${className}`} to={to} {...props} />
+    )
+}
 
 const Menu = () => {
     const handleOnClick = () => {
@@ -20,28 +27,28 @@ const Menu = () => {
             </button>
             <nav className="flex flex-col items-center justify-center space-y-8">
                 <Link
-                    className="text-2xl font-bold transparent-effect"
+                    className="relative text-2xl font-bold transparent-effect"
                     onClick={handleOnClick}
                     to="/"
                 >
                     Home
                 </Link>
                 <Link
-                    className="hidden text-2xl font-bold text-center transparent-effect"
+                    className="relative hidden text-2xl font-bold text-center transparent-effect"
                     onClick={handleOnClick}
                     to="/work"
                 >
                     Work
                 </Link>
                 <Link
-                    className="hidden text-2xl font-bold transparent-effect"
+                    className="relative hidden text-2xl font-bold transparent-effect"
                     onClick={handleOnClick}
                     to="/stories"
                 >
                     Stories
                 </Link>
                 <Link
-                    className="text-2xl font-bold transparent-effect"
+                    className="relative text-2xl font-bold transparent-effect"
                     onClick={handleOnClick}
                     to="/about"
                 >
