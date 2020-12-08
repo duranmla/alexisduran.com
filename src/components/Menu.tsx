@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import SocialMedia from './SocialMedia'
 
 const Menu = () => {
     const handleOnClick = () => {
@@ -47,6 +48,9 @@ const Menu = () => {
                     About
                 </Link>
             </nav>
+            <div className="absolute bottom-0 right-0 w-full p-8 text-center sm:block">
+                <SocialMedia orientation="row" />
+            </div>
         </div>
     )
 }

@@ -8,10 +8,13 @@ import {
     faInstagram
 } from '@fortawesome/free-brands-svg-icons'
 
-const SocialMedia = () => {
+const SocialMedia = ({ orientation = 'col', className = '' }) => {
+    const classes =
+        orientation === 'col' ? 'flex-col space-y-3' : 'flex-row space-x-6'
+
     return (
         <div className="inline-block">
-            <div className="flex flex-col space-y-3 text-2xl">
+            <div className={`text-2xl flex ${classes} ${className}`}>
                 <a className="transparent-effect" href="#" target="_blank">
                     <span className="hidden">Twitter</span>
                     <FontAwesomeIcon icon={faTwitter} />
