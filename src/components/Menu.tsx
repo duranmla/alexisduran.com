@@ -26,14 +26,14 @@ const Menu = () => {
                     Home
                 </Link>
                 <Link
-                    className="text-2xl font-bold text-center transparent-effect"
+                    className="hidden text-2xl font-bold text-center transparent-effect"
                     onClick={handleOnClick}
                     to="/work"
                 >
                     Work
                 </Link>
                 <Link
-                    className="text-2xl font-bold transparent-effect"
+                    className="hidden text-2xl font-bold transparent-effect"
                     onClick={handleOnClick}
                     to="/stories"
                 >
