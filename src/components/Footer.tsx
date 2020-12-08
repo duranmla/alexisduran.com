@@ -53,10 +53,18 @@ const Footer = () => {
                 <NavLink to="/" preffix="01">
                     home
                 </NavLink>
-                <NavLink to="/work" preffix="02">
+                <NavLink
+                    className="pointer-events-none"
+                    to="/work"
+                    preffix="(coming soon)"
+                >
                     work
                 </NavLink>
-                <NavLink to="/stories" preffix="03">
+                <NavLink
+                    className="pointer-events-none"
+                    to="/stories"
+                    preffix="(coming soon)"
+                >
                     stories
                 </NavLink>
                 <NavLink to="/about" preffix="04">
