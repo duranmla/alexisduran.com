@@ -14,7 +14,7 @@ const NavLink = ({
             className={`p-4 text-2xl font-bold uppercase transparent-effect ${className}`}
             {...linkAttrs}
         >
-            <p className="top-0 left-0 block m-0 text-xs italic font-normal">
+            <p className="block m-0 text-xs italic font-normal preffix">
                 {preffix}
             </p>
             <p className="relative block leading-none">{children}</p>
@@ -54,14 +54,14 @@ const Footer = () => {
                     home
                 </NavLink>
                 <NavLink
-                    className="pointer-events-none"
+                    className="pointer-events-none preffix-smaller"
                     to="/work"
                     preffix="(coming soon)"
                 >
                     work
                 </NavLink>
                 <NavLink
-                    className="pointer-events-none"
+                    className="pointer-events-none preffix-smaller"
                     to="/stories"
                     preffix="(coming soon)"
                 >
