@@ -29,7 +29,7 @@ const AboutPage = () => (
                     <span className="hidden text-5xl leading-none text-right lg:block">
                         Hola!
                     </span>
-                    <div className="mb-32 content lg:col-span-3">
+                    <div className="mb-20 content lg:col-span-3">
                         <p className="mb-8">
                             I am going to give you a summary of how I percieve
                             myself from outside. Also talking in a third party
