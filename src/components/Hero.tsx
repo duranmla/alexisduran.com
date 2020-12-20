@@ -2,10 +2,10 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { Link } from 'gatsby'
 
-const Hero = ({ imgData }) => {
+const Hero = ({ imgData, className = '' }) => {
     return (
         <>
-            <div className="container px-8">
+            <div className={`container px-8 ${className}`}>
                 <h1 className="mb-4 text-6xl font-bold leading-none">
                     <span className="block mb-2 mr-4 text-4xl font-normal sm:inline-block">
                         I&apos;m
