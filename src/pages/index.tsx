@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { Layout, Hero, SocialMedia } from '../components'
 
 const IndexPage = ({ data }) => (
-    <Layout>
+    <Layout className="homepage">
         <section className="flex items-center">
             <Hero imgData={data} />
         </section>

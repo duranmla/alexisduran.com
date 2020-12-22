@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 
 const NavLink = ({
@@ -22,11 +22,45 @@ const NavLink = ({
     )
 }
 
+type Variants = 'transparent' | 'collapsed' | 'solid'
+
 const Footer = () => {
+    const { innerWidth } = window
+    const initialVariant = innerWidth < 1536 ? 'solid' : 'transparent'
+    const [y, setY] = useState(window.scrollY)
+    const [animateClass, setAnimateClass] = useState<Variants>(initialVariant)
+
+    const handleNavigation = useCallback(
+        (e) => {
+            // Large screens won't get favored by animation
+            if (window.innerWidth >= 1536) return
+
+            const { scrollY } = e.currentTarget
+
+            if (y > scrollY) {
+                setAnimateClass('solid')
+            } else if (y < scrollY && scrollY > 5) {
+                setAnimateClass('collapsed')
+            }
+
+            setY(scrollY)
+        },
+        [y]
+    )
+
+    useEffect(() => {
+        setY(window.scrollY)
+        window.addEventListener('scroll', handleNavigation)
+
+        return () => {
+            window.removeEventListener('scroll', handleNavigation)
+        }
+    }, [handleNavigation])
+
     return (
         <footer
             id="site-footer"
-            className="mt-8 bg-white sm:p-4 sm:bg-transparent"
+            className={`site-footer fixed bottom-0 left-0 w-full sm:p-4 ${animateClass}`}
         >
             <div className="flex justify-around divide-x shadow sm:hidden">
                 <NavLink

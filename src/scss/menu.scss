@@ -20,11 +20,6 @@ nav > a.active {
  * Side effects from open menu
  */
 body {
-  .site-footer {
-    transition: transform 0.216s ease 0s;
-    transform: translate3d(0, 0, 0);
-  }
-
   &.menu-open {
     .site-footer {
       transform: translate3d(0, 100%, 0);
