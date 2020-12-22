@@ -26,7 +26,7 @@ body {
   }
 
   &.menu-open {
-    #site-footer {
+    .site-footer {
       transform: translate3d(0, 100%, 0);
     }
 
