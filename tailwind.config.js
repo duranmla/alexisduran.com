@@ -21,6 +21,14 @@ module.exports = {
             gridTemplateRows: {
                 layout: 'auto 1fr auto'
             }
+        },
+        screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+            // in order to add custom screens we need to define the built-in ones
+            xxl: '1536px'
         }
     },
     variants: {
