@@ -9,9 +9,11 @@ const NavLink = ({
     ...linkAttrs
 }) => {
     const Component = tag || Link
+    const classes = location.pathname === linkAttrs.to ? 'active' : ''
+
     return (
         <Component
-            className={`p-4 text-2xl font-bold uppercase transparent-effect ${className}`}
+            className={`p-4 text-2xl font-bold uppercase transparent-effect ${classes} ${className}`}
             {...linkAttrs}
         >
             <p className="block m-0 text-xs italic font-normal preffix">
