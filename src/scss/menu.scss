@@ -1,5 +1,5 @@
 .mobile-nav {
-  @apply bg-white text-black absolute shadow;
+  @apply bg-white text-black absolute shadow pb-40;
   border-top-left-radius: 5%;
   border-bottom-left-radius: 50%;
   height: 100vh;
@@ -20,7 +20,7 @@ nav > a.active {
  * Side effects from open menu
  */
 body {
-  #site-footer {
+  .site-footer {
     transition: transform 0.216s ease 0s;
     transform: translate3d(0, 0, 0);
   }
