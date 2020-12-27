@@ -31,51 +31,55 @@ const AboutPage = () => (
                     </span>
                     <div className="mb-20 content lg:col-span-3">
                         <p className="mb-8">
-                            I am going to give you a summary of how I percieve
-                            myself from outside. Also talking in a third party
-                            perspective as it makes me feel less ackward in an
-                            already vulnerable short description of what I
-                            consider part of my identity
+                            I am going to give you a somewhat summary of myself.
+                            Trying to come up with a literal description of my
+                            identity as human being and outlining some of my
+                            characteristics within my work and outside of it
                         </p>
-                        <h3 className="mb-2 text-2xl font-bold">Who is he?</h3>
+                        <h3 className="mb-2 text-2xl font-bold">Who am I?</h3>
                         <p className="mb-8">
-                            He is a tech guy (duh!). He loves computers, coding,
-                            video-games and nature. More than everything enjoys
-                            the adventure and discovering new things. He is
-                            super competitive, but he won&apos;t take anyone in
-                            the middle while achieving success for himself. He
-                            is a kind of person that is loyal and have a strong
-                            social sense, always looking to have empathy for
-                            others and the problems that surround him. He can be
-                            a little egocentric from time to time and also have
-                            some episodes of selfishness, but in the end he is
-                            very aware of himself and try to embrace
-                            understanding and put his ego aside. He loves to
-                            read and always try to improve himself on every way
-                            possible.
+                            Well... is a very deep question but let&apos;s keep
+                            it simple. I am a tech guy (duh!). I love computers,
+                            coding, video-games and nature. More than everything
+                            I enjoy the adventure and discovering new things.
+                            Super competitive, but I will never take over anyone
+                            while achieving success for myself, I strongly
+                            believe in this{' '}
+                            <a href="https://www.celticsblog.com/2020/5/5/21247660/doc-rivers-remembers-the-origins-of-celtics-ubuntu-ray-allen-kevin-garnett-paul-pierce-reunion-nba">
+                                Doc Rivers &quot;Ubuntu&quot; boston celtics
+                            </a>{' '}
+                            where in summary I will be better if my team is
+                            better. I am the type of person that takes loyalty
+                            seriously and that has a strong social sense, always
+                            looking to have empathy for others and the problems
+                            that surround me. I can be a little egocentric from
+                            time to time and also have some episodes of
+                            selfishness, but in the end I try to be aware of
+                            myself and try to embrace understanding putting my
+                            ego aside. I love to read and I am a bit obcess with
+                            constant improvement on every way possible.
                         </p>
                         <h3 className="mb-2 text-2xl font-bold">
                             What about the professional side?
                         </h3>
                         <p className="mb-8">
-                            In terms of profession he is advocate to the Web
-                            development doing front-end work most of the time.
-                            He has knowledge of server configuration and
-                            back-end in general but he is mainly the go to
-                            person for testing, accessibility and some neats
-                            over Frontend world. While he may not be the
-                            smartest of the room he likes to strive for being
-                            the best in a integral way, helping others, handling
-                            professional topics without hassle and pushing for
-                            excellence for the people that work with him.
+                            In terms of profession I am advocate to Web
+                            development doing front-end work most of the time. I
+                            have knowledge in back-end generals but I will be
+                            probably the go to person from my collegues in terms
+                            of testing, accessibility and some neats over
+                            Frontend world. While I may not be the smartest of
+                            the room I am intentional for give my very best in a
+                            integral way, helping others, handling professional
+                            topics and pushing my team to be the best version of
+                            ourselves.
                         </p>
                         <h3 className="mb-2 text-2xl font-bold">
-                            Back to the &quot;I&quot;. What tools I am
-                            confortable with?
+                            What tools I am confortable with?
                         </h3>
                         <p>
-                            As developers we need to learn and challenge
-                            constantly, thus, this list only represent
+                            As developers we need to learn and challenge our
+                            knowledge constantly, thus, this list only represent
                             technologies/tools/libraries I may be exposed
                             frequently in my daily basis. But for better or
                             worst is not the entire universe of things I will
