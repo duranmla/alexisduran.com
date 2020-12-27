@@ -4,15 +4,17 @@
   transform: translate3d(0, 0, 0);
   transition: transform 0.216s ease;
 
-  @screen xxl {
-    @apply border-none bg-transparent text-white shadow-none;
-  }
-
   &.collapsed {
     transform: translate3d(0, 100%, 0);
   }
 
-  .layout.homepage & {
-    @apply bg-transparent text-white shadow-none;
+  @screen sm {
+    .layout.homepage & {
+      @apply border-none bg-transparent text-white shadow-none;
+    }
+  }
+
+  @screen xxl {
+    @apply border-none bg-transparent text-white shadow-none;
   }
 }
