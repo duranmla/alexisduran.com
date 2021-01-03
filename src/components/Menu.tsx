@@ -25,7 +25,7 @@ const Menu = () => {
                 <div className="stripe" />
                 <div className="stripe" />
             </button>
-            <nav className="flex flex-col items-center justify-center space-y-8">
+            <nav className="flex flex-col items-center justify-center mb-40 space-y-8">
                 <Link
                     className="relative text-2xl font-bold transparent-effect"
                     onClick={handleOnClick}
