@@ -12,4 +12,14 @@ body,
 
 .layout {
   @apply grid grid-rows-layout h-full;
+
+  & > section {
+    @apply pb-20;
+  }
+
+  @screen sm {
+    & > section {
+      @apply pb-0;
+    }
+  }
 }
