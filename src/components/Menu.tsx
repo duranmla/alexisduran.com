@@ -55,7 +55,7 @@ const Menu = () => {
                     About
                 </Link>
             </nav>
-            <div className="absolute bottom-0 right-0 w-full p-8 mb-16 text-center sm:block">
+            <div className="absolute bottom-0 right-0 w-full p-8 text-center sm:block">
                 <p className="mb-2 italic">Let&apos;s connect!</p>
                 <SocialMedia orientation="row" />
             </div>
