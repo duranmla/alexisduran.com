@@ -3,18 +3,21 @@
  * the routing manipulation we need to affect
  * them to allow the layout render properly
  */
-html,
+html {
+  height: 100%;
+}
+
 body,
 #___gatsby,
 #___gatsby > div {
-  height: 100%;
+  min-height: 100%;
 }
 
 .layout {
   @apply grid grid-rows-layout h-full;
 
   & > section {
-    @apply pb-20;
+    @apply pb-16;
   }
 
   @screen sm {
