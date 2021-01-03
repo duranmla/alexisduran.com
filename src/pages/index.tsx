@@ -5,7 +5,7 @@ import { Layout, Hero, SocialMedia } from '../components'
 const IndexPage = ({ data }) => (
     <Layout className="homepage">
         <section className="flex items-center">
-            <Hero imgData={data} />
+            <Hero className="mb-0 sm:mb-40" imgData={data} />
         </section>
         <div className="absolute bottom-0 right-0 z-10 hidden p-8 sm:block">
             <SocialMedia />
