@@ -8,8 +8,7 @@
 }
 
 #menu-toggle {
-  @apply relative;
-  transition: 0.216s transform 0s;
+  transition: transform 0.216s ease;
   transform: scale(1);
 
   .stripe:nth-child(2) {
@@ -22,6 +21,14 @@
     .stripe {
       @apply bg-transparent;
     }
+  }
+
+  &.active {
+    transform: scale(1);
+  }
+
+  &.inactive {
+    transform: scale(0);
   }
 }
 

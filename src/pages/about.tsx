@@ -10,7 +10,7 @@ const AboutPage = () => (
         <div className="watermark" />
         <section className="flex flex-col items-center space-y-2">
             <div className="container px-8">
-                <nav className="flex mb-8 sm:hidden">
+                <nav className="flex my-8 sm:hidden">
                     <Link to="/" className="text-xs italic">
                         <FontAwesomeIcon icon={faChevronCircleLeft} /> Back to
                         homepage
