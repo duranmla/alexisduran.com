@@ -16,7 +16,7 @@ const Menu = () => {
     }
 
     return (
-        <div className="flex items-center justify-center mobile-nav">
+        <div className="flex flex-col items-center justify-around mobile-nav">
             <button
                 aria-label="close menu"
                 className="m-8 bg-transparent stripe-close-icon"
@@ -25,7 +25,7 @@ const Menu = () => {
                 <div className="stripe" />
                 <div className="stripe" />
             </button>
-            <nav className="flex flex-col items-center justify-center mb-40 space-y-8">
+            <nav className="flex flex-col items-center justify-center space-y-8">
                 <Link
                     className="relative text-2xl font-bold transparent-effect"
                     onClick={handleOnClick}
@@ -55,7 +55,7 @@ const Menu = () => {
                     About
                 </Link>
             </nav>
-            <div className="absolute bottom-0 right-0 w-full p-8 text-center sm:block">
+            <div className="w-full p-8 text-center sm:block">
                 <p className="mb-2 italic">Let&apos;s connect!</p>
                 <SocialMedia orientation="row" />
             </div>
