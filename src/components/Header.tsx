@@ -25,7 +25,7 @@ const Header = () => {
                 <NavLink
                     href="https://bit.ly/3mPH9XA"
                     target="blank"
-                    preffix="Get my"
+                    preffix="Check my"
                 >
                     resume
                 </NavLink>

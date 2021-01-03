@@ -68,7 +68,7 @@ const Footer = () => {
                 <NavLink
                     tag="a"
                     href="https://bit.ly/3mPH9XA"
-                    preffix="Get my"
+                    preffix="Check my"
                     className="w-1/2 text-center text-black"
                     target="blank"
                     style={{ opacity: 1 }}
