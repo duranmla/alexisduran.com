@@ -66,12 +66,12 @@ const AboutPage = () => (
                             In terms of profession I am advocate to Web
                             development doing front-end work most of the time. I
                             have knowledge in back-end generals but I will be
-                            probably the go to person from my collegues in terms
-                            of testing, accessibility and some neats over
-                            Frontend world. While I may not be the smartest of
-                            the room I am intentional for give my very best in a
-                            integral way, helping others, handling professional
-                            topics and pushing my team to be the best version of
+                            the go to person from my collegues in terms of
+                            testing, accessibility and some neats over Frontend
+                            world. While I may not be the smartest of the room I
+                            am intentional for give my very best in a integral
+                            way, helping others, handling professional topics
+                            and pushing my team to be the best version of
                             ourselves.
                         </p>
                         <h3 className="mb-2 text-2xl font-bold">
