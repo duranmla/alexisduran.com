@@ -31,18 +31,17 @@ const AboutPage = () => (
                     </span>
                     <div className="mb-20 content lg:col-span-3">
                         <p className="mb-8">
-                            I am going to give you a somewhat summary of myself.
-                            Trying to come up with a literal description of my
-                            identity as human being and outlining some of my
-                            characteristics within my work and outside of it
+                            I am glad you made it here. Trying to come up with a
+                            literal definition of ourselves can be difficult,
+                            nevertheless, I will give you a summary of who I am
+                            in terms of professional and personal wise.
                         </p>
                         <h3 className="mb-2 text-2xl font-bold">Who am I?</h3>
                         <p className="mb-8">
-                            Well... is a very deep question but let&apos;s keep
-                            it simple. I am a tech guy (duh!). I love computers,
-                            coding, video-games and nature. More than everything
-                            I enjoy the adventure and discovering new things.
-                            Super competitive, but I will never take over anyone
+                            I am a tech guy (duh!). I love computers, coding,
+                            video-games and nature. More than everything I enjoy
+                            the adventure and discovering new things. I can be
+                            super competitive, but I will never take over anyone
                             while achieving success for myself, I strongly
                             believe in this{' '}
                             <a href="https://www.celticsblog.com/2020/5/5/21247660/doc-rivers-remembers-the-origins-of-celtics-ubuntu-ray-allen-kevin-garnett-paul-pierce-reunion-nba">
@@ -55,9 +54,10 @@ const AboutPage = () => (
                             that surround me. I can be a little egocentric from
                             time to time and also have some episodes of
                             selfishness, but in the end I try to be aware of
-                            myself and try to embrace understanding putting my
-                            ego aside. I love to read and I am a bit obcess with
-                            constant improvement on every way possible.
+                            myself embracing understanding and leaving my ego
+                            aside. I can say that I love books and I am a bit
+                            obcess with constant improvement on every way
+                            possible.
                         </p>
                         <h3 className="mb-2 text-2xl font-bold">
                             What about the professional side?
@@ -66,13 +66,12 @@ const AboutPage = () => (
                             In terms of profession I am advocate to Web
                             development doing front-end work most of the time. I
                             have knowledge in back-end generals but I will be
-                            the go to person from my collegues in terms of
-                            testing, accessibility and some neats over Frontend
-                            world. While I may not be the smartest of the room I
-                            am intentional for give my very best in a integral
-                            way, helping others, handling professional topics
-                            and pushing my team to be the best version of
-                            ourselves.
+                            the &quot;go to person&quot; in terms of testing,
+                            accessibility and some neats over Frontend world.
+                            While I may not be the smartest in the room I am
+                            intentional for give my very best in a integral way,
+                            helping others, handling professional topics and
+                            pushing my team to be the best version of ourselves.
                         </p>
                         <h3 className="mb-2 text-2xl font-bold">
                             What tools I am confortable with?
