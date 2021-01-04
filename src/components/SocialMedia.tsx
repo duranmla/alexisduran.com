@@ -16,6 +16,7 @@ const SocialMedia = ({ orientation = 'col', className = '' }) => {
         <div className="inline-block social-media">
             <div className={`text-2xl flex ${classes} ${className}`}>
                 <a
+                    aria-label="open Twitter profile"
                     className="transparent-effect"
                     href="https://twitter.com/duranmla"
                     target="_blank"
@@ -25,6 +26,7 @@ const SocialMedia = ({ orientation = 'col', className = '' }) => {
                     <FontAwesomeIcon icon={faTwitter} />
                 </a>
                 <a
+                    aria-label="open Github profile"
                     className="transparent-effect"
                     href="https://github.com/duranmla"
                     target="_blank"
@@ -34,6 +36,7 @@ const SocialMedia = ({ orientation = 'col', className = '' }) => {
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
+                    aria-label="open LinkedIn profile"
                     className="transparent-effect"
                     href="https://linkedin.com/in/duranmla"
                     target="_blank"
@@ -43,6 +46,7 @@ const SocialMedia = ({ orientation = 'col', className = '' }) => {
                     <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
                 <a
+                    aria-label="open Twitch profile"
                     className="transparent-effect"
                     href="https://twitch.tv/duranmla"
                     target="_blank"
@@ -52,6 +56,7 @@ const SocialMedia = ({ orientation = 'col', className = '' }) => {
                     <FontAwesomeIcon icon={faTwitch} />
                 </a>
                 <a
+                    aria-label="open Instagram profile"
                     className="transparent-effect"
                     href="https://instagram.com/duranmla/"
                     target="_blank"
