@@ -4,7 +4,7 @@ import MenuIcon from './MenuIcon'
 const NavLink = ({ children, preffix, ...linkAttrs }) => {
     return (
         <a
-            className="text-2xl font-bold uppercase transition-opacity duration-200 ease-in-out opacity-50 hover:opacity-100"
+            className="text-2xl font-bold uppercase transparent-effect"
             {...linkAttrs}
         >
             <p className="top-0 left-0 block m-0 text-xs italic font-normal">
