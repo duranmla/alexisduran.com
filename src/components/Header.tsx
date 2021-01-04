@@ -21,7 +21,7 @@ const Header = () => {
             <div className="block sm:hidden">
                 <MenuIcon />
             </div>
-            <nav className="justify-end hidden p-4 space-x-4 sm:flex">
+            <div className="justify-end hidden p-4 space-x-4 sm:flex">
                 <NavLink
                     href="https://bit.ly/3mPH9XA"
                     target="blank"
@@ -32,7 +32,7 @@ const Header = () => {
                 <NavLink href="mailto:hi@alexisduran.com" preffix="Let's work">
                     mail me
                 </NavLink>
-            </nav>
+            </div>
         </header>
     )
 }
