@@ -38,11 +38,11 @@ const Layout = ({ children, className = '' }) => (
                 content="https://s3.eu-central-1.amazonaws.com/alexisduran.com/hero_text.jpeg"
             ></meta>
         </Helmet>
-        <div className={`layout ${className}`}>
+        <main className={`layout ${className}`}>
             <Header />
             {children}
             <Footer />
-        </div>
+        </main>
     </>
 )
 
