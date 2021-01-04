@@ -5,7 +5,8 @@ import Header from './Header'
 
 const Layout = ({ children, className = '' }) => (
     <>
-        <Helmet>
+        <Helmet title="Alexis Duran">
+            <html lang="en" />
             <meta
                 name="viewport"
                 content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
