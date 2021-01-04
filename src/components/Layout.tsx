@@ -9,7 +9,7 @@ const Layout = ({ children, className = '' }) => (
             <html lang="en" />
             <meta
                 name="viewport"
-                content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+                content="viewport-fit=cover, width=device-width"
             />
             {/* Facebook Meta Tags */}
             <meta property="og:url" content="http://alexisduran.com" />
