@@ -85,7 +85,7 @@ const Footer = () => {
                     mail me
                 </NavLink>
             </div>
-            <nav className="hidden divide-x sm:flex">
+            <nav title="desktop navigation" className="hidden divide-x sm:flex">
                 <NavLink to="/" preffix="01">
                     home
                 </NavLink>
