@@ -4,9 +4,9 @@ import {
     faTwitter,
     faTwitch,
     faGithub,
-    faLinkedinIn,
-    faInstagram
+    faLinkedinIn
 } from '@fortawesome/free-brands-svg-icons'
+import { faPodcast } from '@fortawesome/free-solid-svg-icons'
 
 const SocialMedia = ({ orientation = 'col', className = '' }) => {
     const classes =
@@ -56,14 +56,14 @@ const SocialMedia = ({ orientation = 'col', className = '' }) => {
                     <FontAwesomeIcon icon={faTwitch} />
                 </a>
                 <a
-                    aria-label="open Instagram profile"
+                    aria-label="open Podcast page"
                     className="transparent-effect"
-                    href="https://instagram.com/duranmla/"
+                    href="https://anchor.fm/noessolocodigo"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <span className="hidden">Instagram</span>
-                    <FontAwesomeIcon icon={faInstagram} />
+                    <span className="hidden">Personal Podcast</span>
+                    <FontAwesomeIcon icon={faPodcast} />
                 </a>
             </div>
         </div>
