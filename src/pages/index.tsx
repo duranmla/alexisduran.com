@@ -6,7 +6,8 @@ import SEO from '../components/SEO'
 const IndexPage = ({ data }) => (
     <>
         <SEO
-            title="Hola! I'm Alexis Duran"
+            title="Home"
+            coverTitle="Hola! I'm Alexis Duran"
             description="This is a humble place on the internet from yet another cool Software Engineer"
             pageUrl="http://alexisduran.com/"
         />

@@ -9,7 +9,8 @@ import SEO from '../components/SEO'
 const AboutPage = () => (
     <>
         <SEO
-            title="Hola! I'm Alexis Duran"
+            title="About"
+            coverTitle="Hola! I'm Alexis Duran"
             description="Get to know me a little bit. My professional profile as a Software Engineer and a glance to the personal side"
             pageUrl="http://alexisduran.com/about"
         />
