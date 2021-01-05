@@ -67,8 +67,8 @@ const AboutPage = () => (
                                 have some episodes of selfishness, but in the
                                 end I try to be aware of myself embracing
                                 understanding and leaving my ego aside. I can
-                                say that I love books and I am a bit obcess with
-                                constant improvement on every way possible.
+                                say that I love books and I am a bit obsessed
+                                with constant improvement on every way possible.
                             </p>
                             <h3 className="mb-2 text-2xl font-bold">
                                 What about the professional side?
