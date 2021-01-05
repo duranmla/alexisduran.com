@@ -5,7 +5,7 @@ module.exports = {
         // defaultLineHeights: true,
         // standardFontWeights: true
     },
-    purge: [],
+    purge: ['./src/**/*.scss', './src/**/*.tsx'],
     theme: {
         fontFamily: {
             headline: 'Gilroy, sans-serif',
