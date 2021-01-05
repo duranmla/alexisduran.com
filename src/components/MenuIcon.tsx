@@ -4,15 +4,17 @@ import Menu from './Menu'
 type Variants = 'active' | 'inactive'
 
 const MenuIcon = () => {
-    const { innerWidth } = window
+    const { innerWidth } =
+        typeof window !== 'undefined' ? window : { innerWidth: 0 }
     const initialVariant = innerWidth < 1536 ? 'active' : 'inactive'
-    const [y, setY] = useState(window.scrollY)
+    const [y, setY] = useState(typeof window !== 'undefined' && window.scrollY)
     const [animateClass, setAnimateClass] = useState<Variants>(initialVariant)
 
     const handleAnimation = useCallback(
         (e) => {
             // Large screens won't get favored by animation
-            if (window.innerWidth >= 1536) return
+            if (typeof window !== 'undefined' && window.innerWidth >= 1536)
+                return
 
             const { scrollY } = e.currentTarget
 
@@ -28,6 +30,8 @@ const MenuIcon = () => {
     )
 
     useEffect(() => {
+        if (typeof window === undefined) return
+
         setY(window.scrollY)
         window.addEventListener('scroll', handleAnimation)
 

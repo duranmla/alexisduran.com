@@ -9,7 +9,10 @@ const NavLink = ({
     ...linkAttrs
 }) => {
     const Component = tag || Link
-    const classes = location.pathname === linkAttrs.to ? 'active' : ''
+    const classes =
+        typeof location !== 'undefined' && location.pathname === linkAttrs.to
+            ? 'active'
+            : ''
 
     return (
         <Component
@@ -27,15 +30,17 @@ const NavLink = ({
 type Variants = 'transparent' | 'collapsed' | 'solid'
 
 const Footer = () => {
-    const { innerWidth } = window
+    const { innerWidth } =
+        typeof window !== 'undefined' ? window : { innerWidth: 0 }
     const initialVariant = innerWidth < 1536 ? 'solid' : 'transparent'
-    const [y, setY] = useState(window.scrollY)
+    const [y, setY] = useState(typeof window !== 'undefined' && window.scrollY)
     const [animateClass, setAnimateClass] = useState<Variants>(initialVariant)
 
     const handleNavigation = useCallback(
         (e) => {
             // Large screens won't get favored by animation
-            if (window.innerWidth >= 1536) return
+            if (typeof window !== 'undefined' && window.innerWidth >= 1536)
+                return
 
             const { scrollY } = e.currentTarget
 
@@ -51,6 +56,8 @@ const Footer = () => {
     )
 
     useEffect(() => {
+        if (typeof window === undefined) return
+
         setY(window.scrollY)
         window.addEventListener('scroll', handleNavigation)
 

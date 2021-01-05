@@ -3,7 +3,10 @@ import { Link as GatsbyLink } from 'gatsby'
 import SocialMedia from './SocialMedia'
 
 const Link = ({ to, className, ...props }) => {
-    const classes = location.pathname === to ? 'active' : ''
+    const classes =
+        typeof location !== 'undefined' && location.pathname === to
+            ? 'active'
+            : ''
     return (
         <GatsbyLink className={`${classes} ${className}`} to={to} {...props} />
     )
