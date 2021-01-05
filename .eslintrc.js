@@ -1,59 +1,41 @@
 module.exports = {
-    'parser': 'babel-eslint',
-    'parserOptions': {
-        'ecmaVersion': 6,
-        'ecmaFeatures': {
-            'jsx': true,
-            'experimentalObjectRestSpread': true
-        }
+    parser: '@typescript-eslint/parser',
+    env: {
+        browser: true,
+        jest: true
     },
-    plugins: ['ghost', 'react'],
     extends: [
-        'plugin:ghost/node',
-        'plugin:ghost/ember',
-        'plugin:react/recommended'
+        'eslint:recommended',
+        'standard',
+        'plugin:jest/recommended',
+        'plugin:react/recommended',
+        'plugin:prettier/recommended',
+        'prettier/react',
+        'prettier/standard',
+        'plugin:@typescript-eslint/recommended',
+        'prettier/@typescript-eslint'
     ],
-    "settings": {
-        "react": {
-            "createClass": "createReactClass",
-            "pragma": "React",
-            "version": "16.0",
-            "flowVersion": "0.53"
-        },
-        "propWrapperFunctions": ["forbidExtraProps"]
+    parserOptions: {
+        ecmaVersion: 2018
     },
-    "rules": {
-        "ghost/sort-imports-es6-autofix/sort-imports-es6": "off",
-        "ghost/ember/use-ember-get-and-set": "off",
-        "no-console": "off",
-        "no-inner-declarations": "off",
-        "valid-jsdoc": "off",
-        "require-jsdoc": "off",
-        "quotes": ["error", "backtick"],
-        "consistent-return": ["error"],
-        "arrow-body-style": [
-            "error",
-            "as-needed",
-            { "requireReturnForObjectLiteral": true }
-        ],
-        "jsx-quotes": ["error", "prefer-double"],
-        "semi": ["error", "never"],
-        "object-curly-spacing": ["error", "always"],
-        "comma-dangle": [
-            "error",
+    plugins: ['react', 'react-hooks', 'jsx-a11y'],
+    rules: {
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'error',
+        'prettier/prettier': [
+            'error',
             {
-                "arrays": "always-multiline",
-                "objects": "always-multiline",
-                "imports": "always-multiline",
-                "exports": "always-multiline",
-                "functions": "ignore"
+                semi: false,
+                trailingComma: 'none',
+                singleQuote: true
             }
         ],
-        "react/prop-types": [
-            "error",
-            {
-                "ignore": ["children"]
-            }
-        ]
+        'react/prop-types': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off'
+    },
+    settings: {
+        react: {
+            version: 'detect'
+        }
     }
 };

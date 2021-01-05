@@ -1,0 +1,23 @@
+.watermark {
+  position: fixed;
+  height: 100%;
+  left: 5vw;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+
+  @screen lg {
+    top: 10%;
+  }
+}
+
+.watermark::before {
+  content: "About me";
+  text-transform: capitalize;
+  font-size: 40vh;
+  line-height: 1;
+  font-weight: bold;
+  position: absolute;
+  opacity: 0.05;
+  z-index: -1;
+}

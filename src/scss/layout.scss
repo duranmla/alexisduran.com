@@ -1,0 +1,26 @@
+/**
+ * As Gatsby adds extra divs in regards
+ * the routing manipulation we need to affect
+ * them to allow the layout render properly
+ */
+html,
+body,
+#___gatsby,
+#___gatsby > div {
+  height: 100%;
+}
+
+.layout {
+  @apply grid grid-rows-layout;
+  min-height: 100%;
+
+  & > section {
+    @apply pb-16;
+  }
+
+  @screen sm {
+    & > section {
+      @apply pb-0;
+    }
+  }
+}

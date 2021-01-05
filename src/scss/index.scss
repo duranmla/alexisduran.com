@@ -1,0 +1,34 @@
+// TODO: use a more reliable CDN to load Gilroy font
+@import url("https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-red-700 h-full text-white font-normal antialiased font-body;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-headline;
+  }
+}
+
+p > a {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+@import "./layout";
+@import "./filter";
+@import "./effects";
+@import "./footer";
+@import "./menu-icon";
+@import "./menu";
+@import "./watermark";

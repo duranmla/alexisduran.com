@@ -1,0 +1,42 @@
+.mobile-nav {
+  @apply bg-white text-black fixed shadow;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 5%;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  top: 0;
+  transform: translate3d(100%, -100%, 0);
+  transition: transform 0.216s ease 0.05s, border-radius 0.216s ease 0.216s;
+  width: 100vw;
+}
+
+.mobile-nav nav > a.active {
+  @apply underline opacity-100;
+  text-decoration-color: #c53030;
+}
+
+a.active {
+  @apply opacity-100;
+}
+
+a.active p:not(.preffix) {
+  @apply underline;
+}
+
+/**
+ * Side effects from open menu
+ */
+body {
+  &.menu-open {
+    .site-footer {
+      transform: translate3d(0, 100%, 0);
+    }
+
+    .mobile-nav {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+      border-radius: 0%;
+    }
+  }
+}
