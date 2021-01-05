@@ -1,8 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
-const DEFAULT_IMAGE =
-    'https://s3.eu-central-1.amazonaws.com/alexisduran.com/hero_text.jpeg'
+const DEFAULT_IMAGE = 'http://alexisduran.com/images/cover.jpeg'
 
 const SEO = ({
     title,
