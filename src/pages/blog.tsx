@@ -44,8 +44,7 @@ export default function Blog({ data }) {
                                             <h2 className="text-2xl font-bold">
                                                 {post.frontmatter.title}
                                             </h2>
-                                            <small>
-                                                {post.frontmatter.author},{' '}
+                                            <small className="italic">
                                                 {post.frontmatter.date}
                                             </small>
                                         </div>

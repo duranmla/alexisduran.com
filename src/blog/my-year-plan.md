@@ -1,7 +1,7 @@
 ---
 title: Intentions for 2021 🥂
 author: Alexis
-date: 2021-02-10
+date: 2021-02-01
 ---
 
 ## Introduction to my blog post
