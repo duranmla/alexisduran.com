@@ -37,7 +37,7 @@ export default function Blog({ data }) {
                             <span className="hidden text-5xl leading-none text-right lg:block">
                                 Latest
                             </span>
-                            <div className="mb-20 content lg:col-span-3">
+                            <div className="mb-32 content lg:col-span-3">
                                 {posts.map((post) => (
                                     <article key={post.id}>
                                         <Link to={post.fields.slug}>
@@ -66,7 +66,9 @@ export default function Blog({ data }) {
 
 export const pageQuery = graphql`
     query MyQuery {
-        blog: allMarkdownRemark {
+        blog: allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: DESC }
+        ) {
             posts: nodes {
                 fields {
                     slug

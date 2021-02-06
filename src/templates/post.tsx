@@ -4,6 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import SEO from '../components/SEO'
 import { Layout } from '../components'
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
+
+deckDeckGoHighlightElement()
 
 export default function BlogPost({ data }) {
     const post = data.markdownRemark
@@ -32,7 +35,7 @@ export default function BlogPost({ data }) {
                             {post.frontmatter.date}
                         </h2>
                         <section
-                            className="mb-20 content post-content"
+                            className="mb-32 content post-content"
                             dangerouslySetInnerHTML={{ __html: post.html }}
                         />
                     </div>

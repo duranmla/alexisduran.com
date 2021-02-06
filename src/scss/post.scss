@@ -20,4 +20,33 @@
     a {
         @apply underline italic;
     }
+
+    iframe {
+        @apply my-16 mx-auto;
+    }
+
+    blockquote {
+        border-left: 10px solid #fff;
+        margin: 1.5em 10px;
+        padding: 0.5em 10px;
+        quotes: "\201C""\201D""\2018""\2019";
+        font-style: italic;
+
+        &::before {
+            color: #fff;
+            content: open-quote;
+            font-size: 4em;
+            line-height: 0.1em;
+            margin-right: 0.25em;
+            vertical-align: -0.4em;
+        }
+
+        & p {
+            display: inline;
+        }
+    }
+
+    deckgo-highlight-code + * {
+        @apply my-8;
+    }
 }

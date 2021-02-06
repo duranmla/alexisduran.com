@@ -42,7 +42,16 @@ module.exports = {
                 path: path.join(__dirname, `src`, `blog`)
             }
         },
-        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {
+                plugins: [
+                    {
+                        resolve: `gatsby-remark-highlight-code`
+                    }
+                ]
+            }
+        },
         `gatsby-plugin-react-helmet`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
