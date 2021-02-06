@@ -31,7 +31,7 @@ export default function Blog({ data }) {
                             The &rdquo;Journal&rdquo;
                         </h1>
                         <h2 className="mt-2 mb-8 text-2xl lg:text-5xl lg:leading-none">
-                            My way to inspect what I&rsquo;ve been doing
+                            Entries to inspect what I&rsquo;ve been doing
                         </h2>
                         <section className="lg:mt-16 lg:grid lg:grid-cols-4 lg:gap-4">
                             <span className="hidden text-5xl leading-none text-right lg:block">
