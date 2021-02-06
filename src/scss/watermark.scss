@@ -9,15 +9,22 @@
   @screen lg {
     top: 10%;
   }
+
+  &::before {
+    text-transform: capitalize;
+    font-size: 40vh;
+    line-height: 1;
+    font-weight: bold;
+    position: absolute;
+    opacity: 0.05;
+    z-index: -1;
+  }
 }
 
-.watermark::before {
+.watermark.about::before {
   content: "About me";
-  text-transform: capitalize;
-  font-size: 40vh;
-  line-height: 1;
-  font-weight: bold;
-  position: absolute;
-  opacity: 0.05;
-  z-index: -1;
+}
+
+.watermark.blog::before {
+  content: "Articles";
 }

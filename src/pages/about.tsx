@@ -15,7 +15,7 @@ const AboutPage = () => (
             pageUrl="http://alexisduran.com/about"
         />
         <Layout>
-            <div className="watermark" />
+            <div className="watermark about" />
             <section className="flex flex-col items-center space-y-2">
                 <div className="container px-8">
                     <nav className="flex my-8 sm:hidden">
