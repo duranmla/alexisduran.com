@@ -40,15 +40,19 @@ export default function Blog({ data }) {
                             <div className="mb-20 content lg:col-span-3">
                                 {posts.map((post) => (
                                     <article key={post.id}>
-                                        <div className="mb-2">
-                                            <h2 className="text-2xl font-bold">
-                                                {post.frontmatter.title}
-                                            </h2>
-                                            <small className="italic">
-                                                {post.frontmatter.date}
-                                            </small>
-                                        </div>
-                                        <p className="mb-8">{post.excerpt}</p>
+                                        <Link to={post.fields.slug}>
+                                            <div className="mb-2">
+                                                <h2 className="text-2xl font-bold">
+                                                    {post.frontmatter.title}
+                                                </h2>
+                                                <small className="italic">
+                                                    {post.frontmatter.date}
+                                                </small>
+                                            </div>
+                                            <p className="mb-8">
+                                                {post.excerpt}
+                                            </p>
+                                        </Link>
                                     </article>
                                 ))}
                             </div>
@@ -64,6 +68,9 @@ export const pageQuery = graphql`
     query MyQuery {
         blog: allMarkdownRemark {
             posts: nodes {
+                fields {
+                    slug
+                }
                 frontmatter {
                     date(fromNow: true)
                     title
