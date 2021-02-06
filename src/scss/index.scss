@@ -25,10 +25,11 @@ p > a {
   font-style: italic;
 }
 
-@import "./layout";
-@import "./filter";
 @import "./effects";
+@import "./filter";
 @import "./footer";
+@import "./layout";
 @import "./menu-icon";
 @import "./menu";
+@import "./post";
 @import "./watermark";
