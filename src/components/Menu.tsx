@@ -49,9 +49,9 @@ const Menu = () => {
                 <Link
                     className="relative hidden text-2xl font-bold transparent-effect"
                     onClick={handleOnClick}
-                    to="/stories"
+                    to="/blog"
                 >
-                    Stories
+                    Blog
                 </Link>
                 <Link
                     className="relative text-2xl font-bold transparent-effect"
