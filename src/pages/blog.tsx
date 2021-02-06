@@ -70,7 +70,7 @@ export const pageQuery = graphql`
                     title
                     author
                 }
-                excerpt
+                excerpt(pruneLength: 350)
                 id
             }
         }
