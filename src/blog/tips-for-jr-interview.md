@@ -36,25 +36,25 @@ Even if the final output of your solution is wrong the fact of the walkthrough t
 
 A lot of times, and it is particularly true for Junior interviews the interview you will be involved is a sort of representation of a *"pair programming"* session, with that being said make sure to be comfortable speaking out loud on the iteration of the solution for the problem. The idea can be easily described with two examples:
 
-    - Interviewers describe a problem for you to solve
-
-    You: ...........
-    You: ...........
-    You: ...........
-    You: ...........
-    
-    5 awkard minutes later
-    
-    You: "I will do X"
+  >
+  > <br/> Interviewers describe a problem for you to solve
+  > <br/> You: ...
+  > <br/> You: ...
+  > <br/> You: ...
+  > <br/> You: ...
+  > <br/>
+  > <br/> 5 awkard minutes later
+  > <br/>
+  > <br/> You: "I will do X"
 
 In the other hand, you can have something like:
 
-    - Interviewers describe a problem for you to solve
-    
-    You: Mmmm ok... I see, let me think about the things I have and identify the problem    
-    You: I can divide the problem into these pieces of X, Y, Z.
-    You: I will start with X and then we can figure out how to refactor if needed.
-    You: What do you guys thing?
+>
+> <br/> Interviewers describe a problem for you to solve
+> <br/> You: Mmmm ok... I see, let me think about the things I have anidentify the problem
+> <br/> You: I can divide the problem into these pieces of X, Y, Z.
+> <br/> You: I will start with X and then we can figure out how to refactor ineeded.
+> <br/> You: What do you guys thing?
 
 As you can see the two examples are very different and only the later one feels more like a conversation. This later example is the one that you want to seek.
 
@@ -80,7 +80,7 @@ const main = (input) => {
   const output = [];
 
     // check if the element is a veggie
-      // if is vegie do not push into result
+      // if is veggie do not push into result
       // else push into result
   return output;
 }
