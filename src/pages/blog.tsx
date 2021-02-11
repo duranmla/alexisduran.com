@@ -27,10 +27,10 @@ export default function Blog({ data }) {
                                 Back to homepage
                             </Link>
                         </nav>
-                        <h1 className="text-4xl font-bold leading-tight lg:text-6xl">
+                        <h1 className="mb-8 text-4xl font-bold leading-tight sm:mb-0 lg:text-6xl">
                             The &rdquo;Journal&rdquo;
                         </h1>
-                        <h2 className="mt-2 mb-8 text-2xl lg:text-5xl lg:leading-none">
+                        <h2 className="hidden mt-2 mb-8 text-2xl sm:block lg:text-5xl lg:leading-none">
                             Entries to inspect what I&rsquo;ve been doing
                         </h2>
                         <section className="lg:mt-16 lg:grid lg:grid-cols-4 lg:gap-4">
