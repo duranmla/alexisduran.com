@@ -57,7 +57,10 @@ export default function BlogPost({ data }) {
                     style={{ background: 'rgb(229,62,62, .5)' }}
                 >
                     <div className="container px-8 mx-auto">
-                        <Share />
+                        <Share
+                            title={post.frontmatter.title}
+                            url={`http://alexisduran.com${post.fields.slug}`}
+                        />
                     </div>
                 </div>
             </Layout>
@@ -73,6 +76,9 @@ export const query = graphql`
                 date(fromNow: true)
             }
             excerpt(pruneLength: 350)
+            fields {
+                slug
+            }
         }
     }
 `

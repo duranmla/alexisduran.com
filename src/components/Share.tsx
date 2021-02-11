@@ -2,9 +2,19 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-const Share = () => {
+const Share = ({ title, url }) => {
+    const tweetText = `"${title}", an article from Alexis Duran`
+    const tweetHref = `https://twitter.com/share?url=${url}&text=${encodeURI(
+        tweetText
+    )}&via=duranmla`
+
     return (
-        <div className="relative max-w-full p-8 mx-auto share-container">
+        <a
+            className="relative block max-w-full p-8 mx-auto share-container"
+            href={tweetHref}
+            target="_blank"
+            rel="noreferrer"
+        >
             <p className="pl-24 mb-12 md:pl-0">
                 If you take any value from this post or you have any comment I
                 would love to know about it. Start a conversation or simple{' '}
@@ -35,7 +45,7 @@ const Share = () => {
                     ></path>
                 </svg>
             </div>
-        </div>
+        </a>
     )
 }
 

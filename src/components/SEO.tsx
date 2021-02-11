@@ -21,6 +21,9 @@ const SEO = ({
             />
             <meta name="description" content={description} />
             <meta name="image" content={imageUrl} />
+            <link rel="canonical" href={pageUrl} />
+            <link rel="me" href="https://twitter.com/duranmla"></link>
+
             {/* Facebook Meta Tags */}
             <meta property="og:url" content={pageUrl} />
             <meta property="og:type" content="website" />
