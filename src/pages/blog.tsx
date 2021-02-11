@@ -68,6 +68,7 @@ export const pageQuery = graphql`
     query MyQuery {
         blog: allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { status: { eq: "done" } } }
         ) {
             posts: nodes {
                 fields {

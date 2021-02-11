@@ -2,6 +2,7 @@
 title: When the love for Javascript is not enough
 date: "2019-08-28T14:11:00+02:00"
 tags: "life,tech"
+status: "done"
 ---
 
 Some weeks ago, I was invited by my company to make a Talk related to a subject that I could choose. As that event aligned with one of the things I wanted to do this year I didn't doubt and I agree to be part of the event. While the video has been published within the company. The fact of sharing personal experiences makes me a little doubtful when I was thinking about publishing it on Internet. Nevertheless, trying to get the courage to do so I was approached for a co-worker in another department that told me:

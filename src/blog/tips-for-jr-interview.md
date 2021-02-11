@@ -2,6 +2,7 @@
 title: Tips for a Junior Interview
 date: "2019-08-16T16:26:00+02:00"
 tags: "tech"
+status: "done"
 ---
 
 Recently, I have been asked to be part of the recruitment process in the company I work for. While it is not my first time doing this type of processes, it's my first time doing it outside the *"startup world"*. Unlike startups, here we have established strategies and protocols to follow together with the human resources department, besides, unlike my previous experiences I do not have the full control of the recruitment process itself. There are several stages on the interview process where I am on the fence being a spectator of how the recruitment will perform in other steps aside from the tech interview.
