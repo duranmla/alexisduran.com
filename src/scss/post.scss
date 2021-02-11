@@ -46,7 +46,33 @@
         }
     }
 
-    deckgo-highlight-code + * {
-        @apply my-8;
+    deckgo-highlight-code {
+        @apply my-16 mx-auto max-w-full;
+
+        @screen lg {
+            @apply max-w-xl;
+        }
+    }
+}
+
+.share-container {
+    width: 32rem;
+    max-width: 100%;
+
+    @screen md {
+        transform: translateX(17%);
+    }
+}
+
+.share-icon {
+    @apply block absolute;
+    font-size: 4rem;
+    top: 2rem;
+    left: 3rem;
+
+    @screen md {
+        font-size: 5rem;
+        top: 1rem;
+        left: -9rem;
     }
 }
