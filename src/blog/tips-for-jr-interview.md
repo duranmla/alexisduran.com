@@ -6,7 +6,7 @@ tags: "tech"
 
 Recently, I have been asked to be part of the recruitment process in the company I work for. While it is not my first time doing this type of processes, it's my first time doing it outside the *"startup world"*. Unlike startups, here we have established strategies and protocols to follow together with the human resources department, besides, unlike my previous experiences I do not have the full control of the recruitment process itself. There are several stages on the interview process where I am on the fence being a spectator of how the recruitment will perform in other steps aside from the tech interview.
 
-Getting into the point, I have perceived few cases where I feel huge impotency to not be able to talk with the people before they enter to the interview to try to help them to perform in the best they can. In some cases, I felt we as company miss guys that just need some advice to unleash excellent potential.
+Getting into the point, I have perceived few cases where I feel huge impotency to not be able to talk with the people before they enter to the interview to try to help them to perform in the best they can. In some cases, I felt we as company miss folks that just need some advice to unleash excellent potential.
 
 In the following post, I will try to give you some tips as I were with you before the interview started. From now on let's define a timeline where we are in the moment just before you to join into the meeting to show off that you can perform as a software developer within the company.
 
@@ -54,7 +54,7 @@ In the other hand, you can have something like:
 > <br/> You: Mmmm ok... I see, let me think about the things I have anidentify the problem
 > <br/> You: I can divide the problem into these pieces of X, Y, Z.
 > <br/> You: I will start with X and then we can figure out how to refactor ineeded.
-> <br/> You: What do you guys thing?
+> <br/> You: What do you folks thing?
 
 As you can see the two examples are very different and only the later one feels more like a conversation. This later example is the one that you want to seek.
 
