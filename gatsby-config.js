@@ -48,6 +48,9 @@ module.exports = {
                 plugins: [
                     {
                         resolve: `gatsby-remark-highlight-code`
+                    },
+                    {
+                        resolve: 'gatsby-remark-external-links'
                     }
                 ]
             }
