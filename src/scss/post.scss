@@ -53,6 +53,22 @@
             @apply max-w-xl;
         }
     }
+
+    ol, ul {
+        @apply list-inside mb-8;
+
+        li + li {
+            @apply mt-2;
+        }
+    }
+
+    ol {
+        @apply list-decimal;
+    }
+
+    ul {
+        @apply list-disc;
+    }
 }
 
 .share-container {
