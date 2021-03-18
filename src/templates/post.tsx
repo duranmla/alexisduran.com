@@ -18,7 +18,7 @@ export default function BlogPost({ data }) {
                 title="Blog"
                 coverTitle={post.frontmatter.title}
                 description={post.excerpt}
-                pageUrl="http://alexisduran.com/about"
+                pageUrl={`http://alexisduran.com${post.fields.slug}`}
             />
             <Layout>
                 <div className="flex flex-col items-center space-y-2">

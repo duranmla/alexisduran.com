@@ -14,8 +14,8 @@ export default function Blog({ data }) {
             <SEO
                 title="Blog"
                 coverTitle="Hola! I'm Alexis Duran"
-                description="Sharing a little bit of what I stumble across my professional career"
-                pageUrl="http://alexisduran.com/about"
+                description="Sharing some of what I stumble across my professional career"
+                pageUrl="http://alexisduran.com/blog"
             />
             <Layout>
                 <div className="watermark blog" />
