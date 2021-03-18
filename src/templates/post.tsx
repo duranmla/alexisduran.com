@@ -53,15 +53,13 @@ export default function BlogPost({ data }) {
                     </svg>
                 </div>
                 <div
-                    className="py-8 pb-32"
+                    className="p-8 pb-32"
                     style={{ background: 'rgb(229,62,62, .5)' }}
                 >
-                    <div className="container px-8 mx-auto">
-                        <Share
-                            title={post.frontmatter.title}
-                            url={`http://alexisduran.com${post.fields.slug}`}
-                        />
-                    </div>
+                    <Share
+                        title={post.frontmatter.title}
+                        url={`http://alexisduran.com${post.fields.slug}`}
+                    />
                 </div>
             </Layout>
         </>

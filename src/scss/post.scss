@@ -22,7 +22,7 @@
     }
 
     iframe {
-        @apply my-16 mx-auto;
+        @apply my-16 mx-auto max-w-full;
     }
 
     blockquote {
@@ -69,19 +69,26 @@
     ul {
         @apply list-disc;
     }
+
+    .video {
+        @screen md {
+            width: 560px;
+            height: 315px;
+        }
+    }
 }
 
 .share-container {
-    width: 32rem;
     max-width: 100%;
-
+    
     @screen md {
         transform: translateX(17%);
+        width: 32rem;
     }
 }
 
 .share-icon {
-    @apply block absolute;
+    @apply absolute;
     font-size: 4rem;
     top: 2rem;
     left: 3rem;

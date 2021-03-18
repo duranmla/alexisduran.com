@@ -15,7 +15,7 @@ const Share = ({ title, url }) => {
             target="_blank"
             rel="noreferrer"
         >
-            <p className="pl-24 mb-12 md:pl-0">
+            <p className="mb-12">
                 If you take any value from this post or you have any comment I
                 would love to know about it. Start a conversation or simple{' '}
                 <span className="italic font-bold underline">
@@ -24,7 +24,7 @@ const Share = ({ title, url }) => {
             </p>
             <p className="hidden text-2xl font-bold md:block">Click the bird</p>
             <FontAwesomeIcon
-                className="share-icon"
+                className="hidden md:block share-icon"
                 icon={faTwitter}
                 size="lg"
                 color="white"

@@ -11,4 +11,4 @@ Some weeks ago, I was invited by my company to make a Talk related to a subject 
 
 To be honest, it was super meaningful to me that someone has decided to invest the time to listen to the talk encouraged by only free will. In that sense, this YouTube video publication pays tribute to that compliment. Thanks to all the people that help me out. Thanks to all the people that approach me and somehow compliment my talk.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8UV6jztxdJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video" src="https://www.youtube.com/embed/8UV6jztxdJY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
