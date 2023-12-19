@@ -29,7 +29,7 @@ const Header = () => {
                 >
                     resume
                 </NavLink>
-                <NavLink href="mailto:hi@alexisduran.com" preffix="Let's work">
+                <NavLink href="mailto:alexis.duranm@gmail.com" preffix="Let's work">
                     mail me
                 </NavLink>
             </div>

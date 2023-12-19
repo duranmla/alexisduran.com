@@ -84,7 +84,7 @@ const Footer = () => {
                 </NavLink>
                 <NavLink
                     tag="a"
-                    href="mailto:hi@alexisduran.com"
+                    href="mailto:alexis.duranm@gmail.com"
                     preffix="Let's work"
                     className="w-1/2 text-center text-black"
                     style={{ opacity: 1 }}
